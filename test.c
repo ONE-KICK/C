@@ -1,30 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
-#include<stdlib.h>
-
+#include <stdio.h>
+int a, b;
 int main()
 {
-	int a, b, c, t;
-	printf("请输入三个整数");
-	scanf("%d%d%d", &a, &b, &c);
-	if (a < b)
-	{
-		t = a;
-		a = b;
-		b = t;
-	}
-	if (a < c)
-	{
-		t = a;
-		a = c;
-		c = t;
-	}
-	if (b < c)
-	{
-		t = b;
-		b = c;
-		c = t;
-	}
-	printf("三个整数按从大到小排列的顺序为%d %d %d", a, b, c);
-	return 0;
+    printf("请输入两个整数:");
+    scanf("%d %d", &a, &b);
+    if (a > b)
+        printf("两个整数中较大的是%d", a);
+    else if (a == b)
+        printf("两个整数一样大，数值为%d", a);
+    else
+        printf("两个整数中较大的是%d", b);
+    return 0;
 }
