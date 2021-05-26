@@ -14,7 +14,7 @@ int weight(int num) {
 
 int main() {
 	int num = 0;
-	printf("ÇëÊäÈëÒ»¸öÕûÊı,½«»á´òÓ¡³ö¶ş½øÖÆÖĞ1µÄ¸öÊı:\n");
+	printf("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°,å°†ä¼šæ‰“å°å‡ºäºŒè¿›åˆ¶ä¸­1çš„ä¸ªæ•°:\n");
 	scanf("%d", &num);
 	printf("%d\n", weight(num));
 }
