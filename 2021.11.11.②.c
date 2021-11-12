@@ -1,23 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<stdlib.h>//ì³²¨ÄÇÆõ (·ÇµÝ¹é)
+#include<stdlib.h>
 
-int Fibonacci(int n,int ret) {
-		if (n == 1 || n == 2) {
-		return 1;
-		}
-		int num1 = 1;
-		int num2 = 1;
-			for (int i = 3; i <= n; i++) {		
-				ret = num1 + num2;
-				num1 = num2;
-				num2 = ret;
-			}return ret;
+int myStrlen(char* str) {
+	if (*str == '\0') {
+		return 0;
+	}
+		return 1 + myStrlen(str + 1);
 }
 
 int main() {
-	int num = 0;
-	int ret = 0;
-	scanf("%d", &num);
-	printf("%d", Fibonacci(num,ret));
+	char str[] = "abcd";
+	printf("%d", myStrlen(str));
 }
